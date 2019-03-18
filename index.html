@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Analysis Of Printer4You</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/league.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<textarea data-template>
+						## Printer4U
+						a deep Security, Performance and Automation Analysis of P4Y
+					</textarea>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							## Probleme
+						</textarea>
+					</section>
+					<section data-markdown data-background-color="#ff0000">
+						<script type="text/template">
+							## Sicherheit
+							- Kein Firewall <!-- .element: class="fragment" data-fragment-index="1" -->
+							- Kein Private Network  <!-- .element: class="fragment" data-fragment-index="2" -->
+							- Know-how (z.B Rechte oder Git oder ..... ) <!-- .element: class="fragment" data-fragment-index="3" -->
+						</script>
+					</section>
+					<section data-markdown data-background-color="#B22222">
+						<script type="text/template">
+							## Performance
+							- Günstig! <!-- .element: class="fragment" data-fragment-index="1" -->
+							- Kein HTTP/DB/API Caching! <!-- .element: class="fragment" data-fragment-index="2" -->
+							- DB Optimization<!-- .element: class="fragment" data-fragment-index="3" -->
+							- Code Optimization<!-- .element: class="fragment" data-fragment-index="4" -->
+							- Skalation ist Schwer!<!-- .element: class="fragment" data-fragment-index="5" -->
+						</script>
+					</section>
+					<section data-markdown data-background-color="#DC143C">
+						<script type="text/template">
+							## Automatisierung
+							- Alle Schritte und Prozesse im Deployment <!-- .element: class="fragment" data-fragment-index="1" -->
+							- CronJobs sind nicht überschaubar<!-- .element: class="fragment" data-fragment-index="2" -->
+							- Skalation ist unmöglich <!-- .element: class="fragment" data-fragment-index="3" -->
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							## Verbesserung Möglichkeiten / To-Dos
+						</textarea>
+					</section>
+					<section data-markdown data-background-color="#006400">
+						<script type="text/template">
+							## Cloud ist "No-Brainer" für Euch
+							- AWS
+							- GCloud
+							- Azure Microsoft
+						</script>
+					</section>
+					<section data-markdown data-background-color="#008000">
+						<script type="text/template">
+							## Sicherheit
+							- Firewall auf Unterschiedliche ebene. Netzwerk, OS, Software <!-- .element: class="fragment" data-fragment-index="1" -->
+							- Private Network By Default <!-- .element: class="fragment" data-fragment-index="2" -->
+							- Git/DB und Caching Richtig machen <!-- .element: class="fragment" data-fragment-index="3" -->
+						</script>
+					</section>
+					<section data-markdown data-background-color="#228B22">
+						<script type="text/template">
+							## Performance
+							- Caching <!-- .element: class="fragment" data-fragment-index="1" -->
+							- DB Optimization <!-- .element: class="fragment" data-fragment-index="2" -->
+							- Code Optimization <!-- .element: class="fragment" data-fragment-index="3" -->
+							- Wir können Automatisch skalieren <!-- .element: class="fragment" data-fragment-index="4" -->
+							- Backup und Verfügbarkeit sind Out-Of-The-Box da <!-- .element: class="fragment" data-fragment-index="5" -->
+							- Unterschiedliche Servers für Unterschiedliche Länder und Services<!-- .element: class="fragment" data-fragment-index="6" -->
+						</script>
+					</section>
+					<section data-markdown data-background-color="#DC143C">
+						<script type="text/template">
+							## Automatisierung
+							- Jenkins/Bamboo <!-- .element: class="fragment" data-fragment-index="1" -->
+							- Cronjobs durch Tool und mit eine Dashboard verwalten <!-- .element: class="fragment" data-fragment-index="2" -->
+						</script>
+					</section>
+				</section>
+				<section>
+					Danke!
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
